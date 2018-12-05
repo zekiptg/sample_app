@@ -1,0 +1,14 @@
+<% provide(:title,"Home") %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title) %> | Ruby on Rails Tutorial Sample App</title>
+  </head>
+  <body>
+    <h1>Sample App</h1>
+    <p>
+      <%= simple_format t("home_title") %>
+      <%= link_to t("main_page"), t("link_main_page") %>
+    </p>
+  </body>
+</html>
