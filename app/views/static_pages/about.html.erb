@@ -1,0 +1,16 @@
+<% provide(:title,"About") %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title) %> | Ruby on Rails Tutorial Sample App</title>
+  </head>
+  <body>
+    <h1>About</h1>
+    <p>
+      <%= t("about_title_1") %> <%= link_to t("main_page"), t("link_tutorial_page") %>
+      <%= t("about_title_2") %><%= link_to t("screencast"), t("link_screencasts_page") %>
+      <%= t("about_title_3") %><%= link_to t("name"), t("link_main_page") %>
+      <%= simple_format h t("about_title_4") %>
+    </p>
+  </body>
+</html>
