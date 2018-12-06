@@ -31,6 +31,7 @@
 
 en:
   name: "Ruby on Rails"
+  welcome: "Welcome to Ruby on Rails Tutorial Sample App"
   screencast: "Screencast series"
   home_title: "This is the home page for the sample application "
   help_title_1: "Get help on the Ruby on Rails Tutorial at the"

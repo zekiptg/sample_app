@@ -1,0 +1,3 @@
+enabled_locales: ["en", "ja"]
+client:
+  host: "localhost:8080"
