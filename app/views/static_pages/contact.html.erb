@@ -1,11 +1,11 @@
-<% provide(:title, "Contact") %>
+<% provide(:title, t("title.contact")) %>
 <!DOCTYPE html>
 <html>
   <body>
-    <h1>Contact</h1>
+    <h1><%= t("mainContent.contact") %></h1>
     <p>
-      <%= t("contact_title") %>
-      <%= link_to t("contact_page"), t("link_contact_page") %>.
+      <%= t("subContent.contact.first") %>
+      <%= link_to t("page.contact"), t("link.contactPage") %>.
     </p>
   </body>
 </html>
