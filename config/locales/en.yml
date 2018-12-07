@@ -8,6 +8,11 @@ en:
       home: "Home"
       help: "Help"
       login: "Log in"
+      account: "Account"
+      profile: "Profile"
+      settings: "Settings"
+      logout: "Log out"
+      user: "Users"
     footer:
       about: "About"
       contact: "Contact"
@@ -17,12 +22,14 @@ en:
     contact: "Contact"
     about: "About"
     signup: "Signup"
+    login: "Login"
   mainContent:
     home: "Welcome to the Sample App"
     help: "Help"
     contact: "Contact"
     about: "About"
     signup: "Signup"
+    login: "Login"
   subContent:
     home:
       first: "This is the home page for the sample application "
@@ -38,6 +45,8 @@ en:
       fourth: "This is the sample application for the tutorial  "
     signup:
       first: "This will be a signup page for new users."
+    singin:
+      newUser: "New user?"
   page:
     main: "Ruby on Rails Tutorial"
     signup: "Sign up now!"
@@ -59,8 +68,15 @@ en:
         mail: "Email"
         confirm: "Confirmation"
         submit: "Create my account"
+      signin:
+        email: "Email"
+        password: "Password"
+        submit: "Log in"
+        signup: "Sign up now!"
   notify:
     success:
       signup: "Welcome New User"
     danger:
       find: "User Does Not Exists !!!"
+      emailInvalid: "Invalid email/password combination"
+

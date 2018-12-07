@@ -2,7 +2,7 @@ require "test_helper"
 
 class UserTest < ActiveSupport::TestCase
   def setup
-    @user = User.new(name: "huynguyen", email: "huynguyennbk@gmail.com",
+    @user = User.new(name: "huynguyen", email: "huynguyenbk@gmail.com",
       password: "123456", password_confirmation: "123456")
   end
 
@@ -52,7 +52,7 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test "email addresses should be saved as lower-case" do
-    mixed_case_email = "huyNguyenNBK@GmaiL.CoM"
+    mixed_case_email = "huyNguyeNBK@GmaiL.CoM"
     @user.email = mixed_case_email
     @user.save
     assert_equal mixed_case_email.downcase, @user.reload.email
