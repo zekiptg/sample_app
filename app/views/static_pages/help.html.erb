@@ -1,14 +1,13 @@
-<% provide(:title,"Help") %>
+<% provide(:title, t("title.help")) %>
 <!DOCTYPE html>
 <html>
   <body>
-    <h1>Help</h1>
+    <h1><%= t("mainContent.help") %></h1>
     <p>
-      <%= t("help_title_1") %>
-      <%= link_to t("help_page"), t("link_help_page") %>
-      <br/>
-      <%= t("help_title_2") %>
-      <%= link_to t("main_page")+" book", t("link_tutorial_page") %>
+      <%= t("subContent.help.first") %>
+      <%= link_to t("page.help"), t("link.helpPage") %>
+      <%= t "Sub_Content.Help.second" %>
+      <%= link_to t("page.book"), t("link.tutorialPage") %>
     </p>
   </body>
 </html>

@@ -30,25 +30,57 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  name: "Ruby on Rails"
-  welcome: "Welcome to Ruby on Rails Tutorial Sample App"
-  screencast: "Screencast series"
-  home_title: "This is the home page for the sample application "
-  help_title_1: "Get help on the Ruby on Rails Tutorial at the"
-  help_title_2: "To get help on this sample app, see the"
-  contact_title: "Contact the Ruby on Rails Tutorial about the sample app at the"
-  about_title_1: "The"
-  about_title_2: "is a book and The "
-  about_title_3: "to teach web development with "
-  about_title_4: "This is the sample application for the tutorial  "
-  main_page: "Ruby on Rails Tutorial"
-  help_page: "Rails Tutorial HelpPage"
-  contact_page: "Ruby on Rails Tutorial Contact page"
-  link_tutorial_page: "http://www.railstutorial.org/"
-  link_screencasts_page: "http://screencasts.railstutorial.org/"
-  link_main_page: "http://rubyonrails.org/"
-  link_contact_page: "http://www.railstutorial.org/contact"
-  link_help_page: "http://www.railstutorial.org/help"
-  hello: "Hello world"
-  title: " Ruby on Rails Tutorial Sample App"
+  keywords:
+    general:
+      name: "Ruby on Rails"
+      welcome: "Welcome to Ruby on Rails Tutorial Sample App"
+      title: "Ruby on Rails Tutorial Sample App"
+    header:
+      home: "Home"
+      help: "Help"
+      login: "Log in"
+    footer:
+      about: "About"
+      contact: "Contact"
+      new: "New"
+  title:
+    help: "Help"
+    contact: "Contact"
+    about: "About"
+    signup: "Signup"
+  mainContent:
+    home: "Welcome to the Sample App"
+    help: "Help"
+    contact: "Contact"
+    about: "About"
+    signup: "Signup"
+  subContent:
+    home:
+      first: "This is the home page for the sample application "
+    help:
+      first: "Get help on the Ruby on Rails Tutorial at the"
+      second: "To get help on this sample app, see the"
+    contact:
+      first: "Contact the Ruby on Rails Tutorial about the sample app at the"
+    about:
+      first: "The"
+      second: "is a book and The "
+      third: "to teach web development with "
+      fourth: "This is the sample application for the tutorial  "
+    signup:
+      first: "This will be a signup page for new users."
+  page:
+    main: "Ruby on Rails Tutorial"
+    signup: "Sign up now!"
+    help: "Rails Tutorial HelpPage"
+    contact: "Ruby on Rails Tutorial Contact page"
+    screencast: "Screencast series"
+    book: "Ruby on Rails Tutorial Book"
+  link:
+    tutorialPage: "http://www.railstutorial.org/"
+    screencastsPage: "http://screencasts.railstutorial.org/"
+    mainPage: "http://rubyonrails.org/"
+    contactPage: "http://www.railstutorial.org/contact"
+    helpPage: "http://www.railstutorial.org/help"
+
 
