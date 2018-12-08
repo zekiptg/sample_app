@@ -1,3 +1,14 @@
 enabled_locales: ["en", "ja"]
 client:
   host: "localhost:8080"
+valid:
+  length:
+    name:
+      maximum: 50
+      minimum: 6
+    email:
+      maximum: 255
+      minimum: 6
+    password:
+      maximum: 30
+      minimum: 6
