@@ -12,3 +12,5 @@ valid:
     password:
       maximum: 30
       minimum: 6
+gravatar:
+  size: 80
