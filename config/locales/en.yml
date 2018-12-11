@@ -4,6 +4,7 @@ en:
       name: "Ruby on Rails"
       welcome: "Welcome to Ruby on Rails Tutorial Sample App"
       title: "Ruby on Rails Tutorial Sample App"
+      sample: "Sample App"
     header:
       home: "Home"
       help: "Help"
@@ -34,6 +35,9 @@ en:
     login: "Login"
     edit: "Update your profile"
     index: "All users"
+    mail:
+      activation: "Welcome to the Sample App! Click on the link below to activate your account:"
+      subject: "Account activation"
   subContent:
     home:
       first: "This is the home page for the sample application "
@@ -51,6 +55,11 @@ en:
       first: "This will be a signup page for new users."
     singin:
       newUser: "New user?"
+    mail:
+      activate:
+        hi: "Hi %{name}"
+      greeting:
+        hi: "Hi"
   page:
     main: "Ruby on Rails Tutorial"
     signup: "Sign up now!"
@@ -88,13 +97,24 @@ en:
       user:
         delete: "delete"
         confirm: "You sure?"
+      info:
+        mail: "Please check your email to activate your account."
+    activate:
+      active: "Activate"
   notify:
     success:
       signup: "Welcome New User"
       update: "Profile updated"
       delete: "User deleted"
+      activated: "Account activated!"
     danger:
       find: "User Does Not Exists !!!"
       emailInvalid: "Invalid email/password combination"
       login: "Please log in."
-      delete: "User already destroyed yet"
+      invalidActive: "Invalid activation link"
+      delete: "User is not valid"
+    info:
+      mail: "Please check your email to activate your account."
+    message:
+      account:
+        notactive: "Account not activated Check your email for the activation link."
