@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_many :microposts
   attr_accessor :remember_token, :activation_token, :reset_token
 
   before_save :downcase_email
@@ -52,6 +53,10 @@ class User < ApplicationRecord
     self.reset_token = User.new_token
     update_columns(reset_digest: User.digest(reset_token),
       reset_sent_at: Time.zone.now)
+  end
+
+  def feed
+    microposts
   end
 
   class << self
