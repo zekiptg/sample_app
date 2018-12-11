@@ -6,7 +6,6 @@
     <%= form_for(:password_reset, url: password_resets_path) do |f| %>
       <%= f.label :email, t("label.form.passforgot.email") %>
       <%= f.email_field :email, class: "form-control" %>
-
       <%= f.submit t("label.form.passforgot.submit"), class: "btn btn-primary" %>
     <% end %>
   </div>

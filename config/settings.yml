@@ -12,12 +12,19 @@ valid:
     password:
       maximum: 30
       minimum: 6
+    contentMicropost:
+      maximum: 140
 gravatar:
   size: 80
+  microposts: 50
 session:
     params:
       rememberme: "1"
 paginate:
   perpage: 20
+  homeMicropost: 5
 passreset:
   expiredTime: 2
+image:
+  size:
+    maximum: 5

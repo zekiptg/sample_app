@@ -70,6 +70,10 @@ en:
         link: "http://localhost:8000/rails/mailers/user_mailer/password_reset"
         expire: "This link will expire in two hours."
         cancel: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
+    micropost:
+      post: "Posted %{time} ago"
+      viewProfile: "view my profile"
+      micropostunit: "micropost"
   page:
     main: "Ruby on Rails Tutorial"
     signup: "Sign up now!"
@@ -117,6 +121,11 @@ en:
         password: "Password"
         confirm : "Password_Confirmation"
         submit: "Update password"
+      micropost:
+        placeholder: "Compose new micropost..."
+        submit: "Post"
+        delete: "Delete"
+        confirmDelete: "You sure?"
     activate:
       active: "Activate"
   notify:
@@ -126,17 +135,29 @@ en:
       delete: "User deleted"
       activated: "Account activated!"
       passreset: "Password has been reset."
+      micropost: "Micropost created!"
+      micropostDelete: "Micropost deleted"
     danger:
       find: "User Does Not Exists !!!"
       emailInvalid: "Invalid email/password combination"
       login: "Please log in."
       invalidActive: "Invalid activation link"
       delete: "User is not valid"
+      passreset: "Email address not found"
+      expire: "Password reset has expired."
+      micropostDelete: "Micropost is not Exists"
+      micropostcorrectUser: "You are not the Owner of this post"
     info:
       activemail: "Please check your email to activate your account."
       passreset: "Email sent with password reset instructions"
     message:
       account:
-        notactive: "Account not activated. Check your email for the activation link."
-    errors:
+        notactive: "Account not activated. "
+        checkmail: "Check your email for the activation link."
+    error:
       passempty: "can't be empty"
+      micropost:
+        picture: "should be less than 5MB"
+    alert:
+      micropost:
+        picture: "Maximum file size is 5 MB. Please choose a smaller file."
