@@ -1,0 +1,15 @@
+<% @user ||= current_user %>
+<div class="stats">
+  <%= link_to relationship_path(@user, following: :true) do %>
+    <strong id="following" class="stat">
+      <%= @user.following.all.size %>
+    </strong>
+    <%= t("label.keywords.home.following") %>
+  <% end %>
+  <%= link_to relationship_path(@user, following: :false) do %>
+    <strong id="followers" class="stat">
+      <%= @user.followers.all.size %>
+    </strong>
+    <%= t("label.keywords.home.followers") %>
+  <% end %>
+</div>
