@@ -11,14 +11,14 @@ class UsersEditTest < ActionDispatch::IntegrationTest
       name:  "", email: "foo@invalid",
       password: "foo", assword_confirmation: "bar"
     }
-    get edit_user_path(@user)
+    get edit_user_path @user
     assert_template "users/edit"
     patch user_path @user, params: {user: @data}
-    assert_template "en/users/edit"
+    assert_template "users/edit"
   end
 
   test "successful edit" do
-    get edit_user_path(@user)
+    get edit_user_path @user
     assert_template "users/edit"
     name  = "Foo Bar"
     email = "foo@bar.com"
