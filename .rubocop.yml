@@ -19,7 +19,7 @@ AllCops:
     - 'spec/**/*'
     - 'script/rails'
     - 'config/**/*'
-
+  TargetRubyVersion: 2.3
 # Indent private/protected/public as deep as method definitions
 Layout/AccessModifierIndentation:
   EnforcedStyle: indent
@@ -280,7 +280,6 @@ Metrics/LineLength:
   AllowURI: true
   Exclude:
     - config/routes.rb
-
 
 Style/Next:
   # With `always` all conditions at the end of an iteration needs to be
@@ -546,3 +545,4 @@ Rails/ScopeArgs:
 Rails/Validation:
   Include:
     - app/models/**/*.rb
+TargetRubyVersion: "2.1"

@@ -65,13 +65,14 @@ en:
       signup:
         name: "Username"
         pass: "Password"
-        mail: "Email"
+        email: "Email"
         confirm: "Confirmation"
         submit: "Create my account"
       signin:
         email: "Email"
         password: "Password"
         submit: "Log in"
+        remember: "Remember me on this computer"
         signup: "Sign up now!"
   notify:
     success:
@@ -79,4 +80,3 @@ en:
     danger:
       find: "User Does Not Exists !!!"
       emailInvalid: "Invalid email/password combination"
-
