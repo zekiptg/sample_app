@@ -2,3 +2,13 @@ huynguyen:
   name: Huy Nguyen
   email: huynguyennbk@gmail.com
   password_digest: <%= User.digest("091214") %>
+
+michael:
+  name: Michael Example
+  email: michael@example.com
+  password_digest: <%= User.digest("password") %>
+
+archer:
+  name: Sterling Archer
+  email: duchess@example.gov
+  password_digest: <%= User.digest("password") %>

@@ -23,6 +23,8 @@ en:
     about: "About"
     signup: "Signup"
     login: "Login"
+    edit: "Edit user"
+    index: "All user"
   mainContent:
     home: "Welcome to the Sample App"
     help: "Help"
@@ -30,6 +32,8 @@ en:
     about: "About"
     signup: "Signup"
     login: "Login"
+    edit: "Update your profile"
+    index: "All users"
   subContent:
     home:
       first: "This is the home page for the sample application "
@@ -74,9 +78,23 @@ en:
         submit: "Log in"
         remember: "Remember me on this computer"
         signup: "Sign up now!"
+      edit:
+        name: "Username"
+        email: "Email"
+        password: "Password"
+        confirm: "Password Confirmation"
+        submit: "Save changes"
+        change: "Change"
+      user:
+        delete: "delete"
+        confirm: "You sure?"
   notify:
     success:
       signup: "Welcome New User"
+      update: "Profile updated"
+      delete: "User deleted"
     danger:
       find: "User Does Not Exists !!!"
       emailInvalid: "Invalid email/password combination"
+      login: "Please log in."
+      delete: "User already destroyed yet"
