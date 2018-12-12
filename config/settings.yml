@@ -17,3 +17,5 @@ gravatar:
 session:
     params:
       rememberme: "1"
+paginate:
+  perpage: 20
