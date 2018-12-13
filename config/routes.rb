@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'comment/create'
+
+  get 'comment/delete'
+
   scope "(:locale)", locale: /en|vi/ do
     root "static_pages#home"
     get "/help", to: "static_pages#help", as: "helf"
@@ -11,6 +15,7 @@ Rails.application.routes.draw do
     get "/login", to: "sessions#new"
     post "/login", to: "sessions#create"
     delete "/logout", to: "sessions#destroy"
+    post "/comment", to: "comment#create"
     resources :users
     resources :account_activations, only: :edit
     resources :password_resets, except: :index

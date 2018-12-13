@@ -1,0 +1,7 @@
+<% Comment.all.each do |comment| %>
+  <% if micropost_id == comment.micropost_id %>
+    <p>
+     <%= User.find(comment.user_id).name %> : <%= comment.content %>
+    </p>
+  <% end %>
+<% end %>

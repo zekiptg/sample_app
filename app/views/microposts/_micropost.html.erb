@@ -14,4 +14,30 @@
       data: {confirm: t("label.form.micropost.confirmDelete")} %>
     <% end %>
   </span>
+  <div>
+      <b>Comment_View</b>
+      <p class="listComment" id="listComment-<%= micropost.id %>">
+        <%= render "shared/comment", micropost_id: micropost.id %>
+      </p>
+      <input class="CommentBox" id="CommentBox<%= micropost.id %>" type="text"
+          placeholder="Leave Your Comment Here ... ">
+  </div>
 </li>
+
+<script type="text/javascript">
+  $("#CommentBox<%= micropost.id %>").keypress(function(e){
+    if (e.which == 13) {
+      $.ajax({
+      url: "/comment",
+      type: "POST",
+      data: {
+         micropost_id: parseInt(e.target.id.slice(10,e.target.id.length)),
+         content: e.target.value.toString()
+      }
+      }).done(function(result) {
+         $("#listComment-<%= micropost.id%>").append(`<p>${result.user} : ${result.content}</p>`);
+         $(".CommentBox").val("");
+      });
+    }
+  })
+</script>
