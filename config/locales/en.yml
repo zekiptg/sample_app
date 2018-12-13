@@ -26,6 +26,8 @@ en:
     login: "Login"
     edit: "Edit user"
     index: "All user"
+    passforgot: "Forgot password"
+    resetpass: "Reset Password"
   mainContent:
     home: "Welcome to the Sample App"
     help: "Help"
@@ -37,7 +39,10 @@ en:
     index: "All users"
     mail:
       activation: "Welcome to the Sample App! Click on the link below to activate your account:"
-      subject: "Account activation"
+      activesubject: "Account activation"
+      resetsubject: "Password reset"
+    passforgot: "Forgot password"
+    resetpass: "Reset password"
   subContent:
     home:
       first: "This is the home page for the sample application "
@@ -60,6 +65,11 @@ en:
         hi: "Hi %{name}"
       greeting:
         hi: "Hi"
+      reset:
+        click: "To reset your password click the link below:"
+        link: "http://localhost:8000/rails/mailers/user_mailer/password_reset"
+        expire: "This link will expire in two hours."
+        cancel: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
   page:
     main: "Ruby on Rails Tutorial"
     signup: "Sign up now!"
@@ -87,6 +97,7 @@ en:
         submit: "Log in"
         remember: "Remember me on this computer"
         signup: "Sign up now!"
+        forgot: "(forgot password)"
       edit:
         name: "Username"
         email: "Email"
@@ -99,6 +110,13 @@ en:
         confirm: "You sure?"
       info:
         mail: "Please check your email to activate your account."
+      passforgot:
+        email: "Email"
+        submit: "Submit"
+      resetpass:
+        password: "Password"
+        confirm : "Password_Confirmation"
+        submit: "Update password"
     activate:
       active: "Activate"
   notify:
@@ -107,6 +125,7 @@ en:
       update: "Profile updated"
       delete: "User deleted"
       activated: "Account activated!"
+      passreset: "Password has been reset."
     danger:
       find: "User Does Not Exists !!!"
       emailInvalid: "Invalid email/password combination"
@@ -114,7 +133,10 @@ en:
       invalidActive: "Invalid activation link"
       delete: "User is not valid"
     info:
-      mail: "Please check your email to activate your account."
+      activemail: "Please check your email to activate your account."
+      passreset: "Email sent with password reset instructions"
     message:
       account:
-        notactive: "Account not activated Check your email for the activation link."
+        notactive: "Account not activated. Check your email for the activation link."
+    errors:
+      passempty: "can't be empty"

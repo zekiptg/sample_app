@@ -19,3 +19,5 @@ session:
       rememberme: "1"
 paginate:
   perpage: 20
+passreset:
+  expiredTime: 2
