@@ -1,0 +1,7 @@
+<h1><%= t("keywords.general.sample") %></h1>
+
+<p><%= t("subContent.mail.active.hi",name: @user.name )%></p>
+<%= t("mainContent.mail.activation") %>
+<%= link_to t("label.activate.active"),
+  edit_account_activation_url(@user.activation_token,
+  email: @user.email, locale: :en) %>
