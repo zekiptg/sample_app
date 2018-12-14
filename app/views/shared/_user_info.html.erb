@@ -1,0 +1,5 @@
+<%= link_to gravatar_for(current_user, size: Settings.gravatar.microposts), current_user %>
+<h1><%= current_user.name %></h1>
+<span><%= link_to t("subContent.micropost.viewProfile"), current_user %></span>
+<span><%= pluralize(current_user.microposts.count,
+  t("subContent.micropost.micropostunit")) %></span>
