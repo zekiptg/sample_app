@@ -15,6 +15,7 @@ valid:
     contentMicropost:
       maximum: 140
 gravatar:
+  follow_size: 30
   size: 80
   microposts: 50
 session:

@@ -18,6 +18,9 @@ en:
       about: "About"
       contact: "Contact"
       new: "New"
+    home:
+      following: "Following"
+      followers: "Followers"
   title:
     help: "Help"
     contact: "Contact"
@@ -74,6 +77,7 @@ en:
       post: "Posted %{time} ago"
       viewProfile: "view my profile"
       micropostunit: "micropost"
+      micropostcount: "Micropost: %{microposts}"
   page:
     main: "Ruby on Rails Tutorial"
     signup: "Sign up now!"
@@ -112,6 +116,7 @@ en:
       user:
         delete: "delete"
         confirm: "You sure?"
+        viewProfile: "view my profile"
       info:
         mail: "Please check your email to activate your account."
       passforgot:
@@ -126,6 +131,9 @@ en:
         submit: "Post"
         delete: "Delete"
         confirmDelete: "You sure?"
+      follow:
+        submitFollow: "Follow"
+        submitUnfollow: "Unfollow"
     activate:
       active: "Activate"
   notify:
